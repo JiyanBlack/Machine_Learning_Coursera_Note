@@ -4,9 +4,12 @@ We are told what is the correct answer and use those correct answers to predict 
 ## Regression
 Goal: get a continuous value output
 
+### Cost Function
+minimize J(theta0,theta1...) = 1/2m * SUM(h(x) - y)
+
 ## Classification
 Goal: get a discrete value output  
-Deal with infinite number of features --> Support Vector Machine.
+Deal with infinite number of features -> Support Vector Machine.
 
 Example 1:
 
