@@ -20,6 +20,9 @@ Example 2:
 
 (b) Classification - Given a patient with a tumor, we have to predict whether the tumor is malignant or benign.
 
+## Training set
+Already know answer values. Being taken into learning algorithm, output h --> hypothesis
+
 # Unsupervised Learning 
 Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables.  
 Given a dataset, find pattern in the dataset through specific algorithm.   
