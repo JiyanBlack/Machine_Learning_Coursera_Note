@@ -5,7 +5,7 @@ We are told what is the correct answer and use those correct answers to predict 
 Goal: get a continuous value output
 
 ### Cost Function
-minimize J(theta0,theta1...) = 1/2m * SUM(h(x) - y)
+minimize J(theta0,theta1...) = 1/2m * SUM(h(x) - y)  --> suqared error function / mean squared error
 
 ## Classification
 Goal: get a discrete value output  
