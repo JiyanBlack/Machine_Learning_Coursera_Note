@@ -21,6 +21,7 @@ Example 2:
 (b) Classification - Given a patient with a tumor, we have to predict whether the tumor is malignant or benign.
 
 # Unsupervised Learning 
+Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables.  
 Given a dataset, find pattern in the dataset through specific algorithm.   
 ## Clustering   
 1. Google News --> Clustering algorithm, different 
@@ -33,3 +34,10 @@ news about BP oil well news get grouped together.
 
 ## Cocktail Party Algorithm
 Two recodings with two voices --> seperate the two voices into indivisual 
+
+
+Example:
+
+Clustering: Take a collection of 1,000,000 different genes, and find a way to automatically group these genes into groups that are somehow similar or related by different variables, such as lifespan, location, roles, and so on.
+
+Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a cocktail party).
