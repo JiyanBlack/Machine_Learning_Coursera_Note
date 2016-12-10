@@ -23,7 +23,7 @@ Keep changing thetas to reduce J(thetas), until the local minimum
 Goal: get a discrete value output  
 Deal with infinite number of features -> Support Vector Machine.   
 
-  
+## Examples
 Example 1:
 
 Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.
@@ -54,7 +54,7 @@ news about BP oil well news get grouped together.
 Two recodings with two voices --> seperate the two voices into indivisual 
 
 
-Example:
+## Example:
 
 Clustering: Take a collection of 1,000,000 different genes, and find a way to automatically group these genes into groups that are somehow similar or related by different variables, such as lifespan, location, roles, and so on.
 
