@@ -1,16 +1,27 @@
 # Supervised Learning
 We are told what is the correct answer and use those correct answers to predict the unknown situation.
 
+Training set: Already know answer values. Being taken into learning algorithm, output h --> hypothesis
+
 ## Regression
 Goal: get a continuous value output
 
 ### Cost Function
 minimize J(theta0,theta1...) = 1/2m * SUM(h(x) - y)  --> suqared error function / mean squared error
 
+### Gradient Descent
+Start with initial guess of thetas. Doesn't matter the particular value.  
+Keep changing thetas to reduce J(thetas), until the local minimum
+
 ## Classification
 Goal: get a discrete value output  
-Deal with infinite number of features -> Support Vector Machine.
-
+Deal with infinite number of features -> Support Vector Machine.   
+θj := θj - a * ∂ J(θ...) / ∂θj
+  * := -- assignment
+  * = -- asserting
+  * a -- how big step between each trial
+<strong>All thetas should be updated simutaneously.</strong>
+  
 Example 1:
 
 Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.
@@ -23,8 +34,7 @@ Example 2:
 
 (b) Classification - Given a patient with a tumor, we have to predict whether the tumor is malignant or benign.
 
-## Training set
-Already know answer values. Being taken into learning algorithm, output h --> hypothesis
+
 
 # Unsupervised Learning 
 Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables.  
