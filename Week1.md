@@ -18,6 +18,8 @@ Keep changing thetas to reduce J(thetas), until the local minimum
   * a -- how big step between each trial  
  
 <strong>All thetas should be updated simutaneously.</strong>  
+This algorithm can converge to a local minumum. Because the partial differential part (∂J(θ...) / ∂θj) or slope
+is closer to 0 when J(theta) is closer to the local minimun. 
 
 ## Classification
 Goal: get a discrete value output  
