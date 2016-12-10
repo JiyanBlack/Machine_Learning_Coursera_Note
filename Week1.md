@@ -12,16 +12,17 @@ minimize J(theta0,theta1...) = 1/2m * SUM(h(x) - y)  --> suqared error function 
 ### Gradient Descent
 Start with initial guess of thetas. Doesn't matter the particular value.  
 Keep changing thetas to reduce J(thetas), until the local minimum
-
-## Classification
-Goal: get a discrete value output  
-Deal with infinite number of features -> Support Vector Machine.   
 θj := θj - a * ∂ J(θ...) / ∂θj
   * := -- assignment
   * = -- asserting
   * a -- how big step between each trial  
-  
-<strong>All thetas should be updated simutaneously.</strong>
+ 
+<strong>All thetas should be updated simutaneously.</strong>  
+
+## Classification
+Goal: get a discrete value output  
+Deal with infinite number of features -> Support Vector Machine.   
+
   
 Example 1:
 
