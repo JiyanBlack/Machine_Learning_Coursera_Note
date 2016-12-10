@@ -19,7 +19,8 @@ Deal with infinite number of features -> Support Vector Machine.
 θj := θj - a * ∂ J(θ...) / ∂θj
   * := -- assignment
   * = -- asserting
-  * a -- how big step between each trial
+  * a -- how big step between each trial  
+  
 <strong>All thetas should be updated simutaneously.</strong>
   
 Example 1:
