@@ -9,7 +9,7 @@ Goal: get a continuous value output
 ### Cost Function
 minimize J(theta0,theta1...) = 1/2m * SUM(h(x) - y)  --> suqared error function / mean squared error
 
-### Gradient Descent
+### Gradient Descent 
 Start with initial guess of thetas. Doesn't matter the particular value.  
 Keep changing thetas to reduce J(thetas), until the local minimum
 θj := θj - a * ∂ J(θ...) / ∂θj
@@ -20,6 +20,12 @@ Keep changing thetas to reduce J(thetas), until the local minimum
 <strong>All thetas should be updated simutaneously.</strong>  
 This algorithm can converge to a local minumum. Because the partial differential part (∂J(θ...) / ∂θj) or slope
 is closer to 0 when J(theta) is closer to the local minimun. 
+
+But the cost function of linear regression is always the bow-shaped function (convex function), so there is only one minimun that 
+is both local and global minimum(optimum).  
+So the algorithm always works for linear regression and produce one true optimum.
+
+This is also called Batch Gradient Descent: Each step of gradient descent uses all the training examples.
 
 ## Classification
 Goal: get a discrete value output  
