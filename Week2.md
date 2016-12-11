@@ -41,3 +41,10 @@ If a is too small, the converging process can be very slow.
 ### Automatical convergence test:
  test if the J decreases less than a value during each iterration (better to look the plotting)
 
+### Polynomial Regression
+
+Our hypothesis function need not be linear (a straight line) if that does not fit the data well.
+
+We can change the behavior or curve of our hypothesis function by making it a quadratic, cubic or square root function (or any other form).
+
+One important thing to keep in mind is, if you choose your features this way then feature scaling becomes very important.
