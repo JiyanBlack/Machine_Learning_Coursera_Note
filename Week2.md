@@ -34,3 +34,10 @@ We can speed up gradient descent by having each of our input values in roughly t
 Two techniques to help with this are feature scaling and mean normalization. 
 
 ### Learning rage alpha -- a
+Plot No.of Iteratinos -- J(theta), it should decreases and indicate that your algorithm is working. If the curve is close to flatten  
+then it can be assumed to be achieved the goal.   
+If J is increasing, a should be smaller to converge.  
+If a is too small, the converging process can be very slow.  
+### Automatical convergence test:
+ test if the J decreases less than a value during each iterration (better to look the plotting)
+
