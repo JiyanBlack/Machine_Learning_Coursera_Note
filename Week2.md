@@ -66,3 +66,9 @@ y2
 * No need to do feature scaling for normal equation.  
 * Normal Equation is more convenient. But calculate the inverse of X<sup>T</sup>X is actually O(n3).   
 * For large dataset, should use gradient descent (usually when normal equation is too slow)
+
+### None-invertible X<sup>T</sup>X
+* Pretty rare  
+* pinv (psudo invert) will still get the true value even if it's invertible  
+* Reasons may be: 1. Redundant features; 2. Too many features, or too few training sets. We can use regularization to solve this problem.  
+
