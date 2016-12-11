@@ -1,3 +1,4 @@
+# Basic Operation
 * bool value return 0/1; e.g: 1 && 0  >> ans = 0
 * not equal is ~= not !=  
 * put ';' at the end if a semi-colon is put at the end:  
@@ -19,6 +20,7 @@ disp(),  sfprintf('c string template')
 * eye(4) --> 4 by 4 identity matrix  
 * help command --> help eye, help doc of eye function
 
+# Moving Data
 * size(matrix) --> return 1 by 2 matrix: row, column
 * length(v) --> length of the longest dimension  
 *　load data:  load features.dat  
@@ -26,4 +28,13 @@ disp(),  sfprintf('c string template')
 * clear variable --> delete variable from memory
 * v= priceY(1:10) --> slice to get v including 1 and 10
 * save file_name.mat variable  --> load file_name.mat  then you can use v
-* save hello.txt v -ascii %will save as ascii text
+* save hello.txt v -ascii %will save as ascii text  
+* A(3,2) means element at row 3 column 2
+* A(2,:) %':' means everything at that row/column
+* A(:,2) everything at the second column
+* A([1 3],:) [1 3] means 1 or 3, : means every element at that row  
+* A(:,2) = [1 22 33] reassign the second column
+* A=[A,[101;102;103]] % append the new column to the right
+* A(:)  --> put all elements in A to one vector
+* C = [ A B ]  --> concate B to the right of A
+* C = [A ; B] --> put B below of A
