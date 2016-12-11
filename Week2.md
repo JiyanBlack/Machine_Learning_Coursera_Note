@@ -1,6 +1,6 @@
 # Supervised Learning
 
-## Linear Regression
+## Gradient Descent for Linear Regression
 
 ### Multiple Features (Multivariate Linear Regression)
 
@@ -48,3 +48,14 @@ Our hypothesis function need not be linear (a straight line) if that does not fi
 We can change the behavior or curve of our hypothesis function by making it a quadratic, cubic or square root function (or any other form).
 
 One important thing to keep in mind is, if you choose your features this way then feature scaling becomes very important.
+
+## Normal Equation -- Linear Regression
+Method to solve for theta analytically.  
+Get every partial diriatives for theta j = 0, and calculate the value of theta j.  
+
+θ=(X<sup>T</sup>X)<sub>−1</sub>X<sup>T</sup>y
+x=[  
+x10 x11 x12 x13  
+x20 x21 x22 x23  
+]
+
