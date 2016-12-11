@@ -59,5 +59,10 @@ x10 x11 x12 x13
 x20 x21 x22 x23  
 ]  
 y=[  
-y1  y2  y3  ]
+y1  
+y2  
+]
 
+* No need to do feature scaling for normal equation.  
+* Normal Equation is more convenient. But calculate the inverse of X<sup>T</sup>X is actually O(n3).   
+* For large dataset, should use gradient descent (usually when normal equation is too slow)
