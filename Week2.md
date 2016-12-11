@@ -53,9 +53,11 @@ One important thing to keep in mind is, if you choose your features this way the
 Method to solve for theta analytically.  
 Get every partial diriatives for theta j = 0, and calculate the value of theta j.  
 
-θ=(X<sup>T</sup>X)<sub>−1</sub>X<sup>T</sup>y
-x=[  
+θ=(X<sup>T</sup>X)<sub>−1</sub>X<sup>T</sup>y   
+x=[    
 x10 x11 x12 x13  
 x20 x21 x22 x23  
-]
+]  
+y=[  
+y1  y2  y3  ]
 
