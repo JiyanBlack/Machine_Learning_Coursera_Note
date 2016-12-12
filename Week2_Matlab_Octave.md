@@ -76,4 +76,6 @@ disp(),  sfprintf('c string template')
 * max(max(A)) == max(A(:))
 * sum(A,1) --> sum of first dimension(column-wise)  
 * sum(A,2) --> sum of the second dimension(row-wise)
-* 
+* A .* eye(9) 
+* flipud(matrix) --> flip up down
+* pinv() --> psudo inverse
