@@ -79,3 +79,15 @@ disp(),  sfprintf('c string template')
 * A .* eye(9) 
 * flipud(matrix) --> flip up down
 * pinv() --> psudo inverse
+
+# Plot Data
+* plot(x_array,y_array,'color') 
+* hold on; --> generate plot on the same current diagram
+* figure(1); --> create new empty figures
+* plot(x,y) --> plot on the new created figure
+* subplot(1,2,1); %divides plot a 1x2 grid, and access the first element
+* plot(t,y2) --> plot t-y2 on the newly created left subplot 
+* axis([0.5 1 -1 1]) --> set the x and y range, x: 0.5~1, y:-1~1
+* clf --> clear figure
+* imagesc(A), colorbar, colormap grey  --> create a pic to divided by A matrix, use color to display A's values
+* a=1,b=2,c=3 --> command chaining of function calls, same as a=1;b=2;c=3 but do not print the result
