@@ -1,3 +1,17 @@
+# practice and explain!
+1~=2  
+disp(sprintf('%.2f',3.14159))  
+format long/short  
+v = 1:0.2:2  
+ones(3,3)  
+zeros(3,3)  
+rand(2,3)  
+randn(2,3)  
+hist(rand(100,100),100)  
+eye(10)  
+help help/randn/eye...  
+
+
 # Basic Operation
 * bool value return 0/1; e.g: 1 && 0  >> ans = 0
 * not equal is ~= not !=  
@@ -38,3 +52,28 @@ disp(),  sfprintf('c string template')
 * A(:)  --> put all elements in A to one vector
 * C = [ A B ]  --> concate B to the right of A
 * C = [A ; B] --> put B below of A
+
+# Computing Data
+* A * B --> matrix multiply  
+* A .* B --> element wise multiplication
+* A .^ 2 --> element wise square  
+* 1 ./ A --> element wise inverse
+* log(maxtrix) --> log for each element
+* exp(matrix) -->  e to the element base
+* abs(matrix) --> absolute value
+* A + ones(size(A)) == A + 1
+* A' = A<sup>T</sup>
+* [val, ind] = max(a) --> return the value and index of max element
+* A < 3 --> compare each element and replace with 0 or 1 
+* find(A < 3) --> tell you which element is less than 3
+* A = magic(3) --> return 3by3 matrix that all columns and rows and diagonal sum to the same value 
+* [r,c] = find(A>5) --> return row, column index of elements that is true
+* sum(), prod() --> sum or product column wise  
+* floor(), ceil() --> floor or ceil each element
+* max(rand(3),rand(3)) --> compare the element at the same position in two matrix and return the maxiumum value
+* max(A,[],1) --> get the max of the first dimension (column-wise) of A
+* max(A,[],2) --> the second dimension(row-wise) of A
+* max(max(A)) == max(A(:))
+* sum(A,1) --> sum of first dimension(column-wise)  
+* sum(A,2) --> sum of the second dimension(row-wise)
+* 
