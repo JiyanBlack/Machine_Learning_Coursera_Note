@@ -11,6 +11,16 @@ hist(rand(100,100),100)
 eye(10)  
 help help/randn/eye...  
 
+A=magic(5)  
+size(A)  
+length(A)  
+who/whos  
+Vector(1:3)
+save A.mat A  
+save A.txt A -ascii  
+Matrix(3,2)  
+Matrix(3,:)  
+Matrix(:,2)  
 
 # Basic Operation
 * bool value return 0/1; e.g: 1 && 0  >> ans = 0
