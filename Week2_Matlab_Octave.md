@@ -91,3 +91,13 @@ disp(),  sfprintf('c string template')
 * clf --> clear figure
 * imagesc(A), colorbar, colormap grey  --> create a pic to divided by A matrix, use color to display A's values
 * a=1,b=2,c=3 --> command chaining of function calls, same as a=1;b=2;c=3 but do not print the result
+
+# Flow contro
+* for i=1:10, v(i)=2^i;end;
+* break/continue also can be used
+* i=1; while i<=5, v(i)=100;i=i+1;end;
+* if condition; elseif condition; else; end;
+* function y=squareThisNumber(5), y=x^2;
+* addpaht('path') to be able to execute the func in this path
+
+# Vectorization
