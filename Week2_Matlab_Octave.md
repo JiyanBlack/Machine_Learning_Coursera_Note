@@ -101,3 +101,7 @@ disp(),  sfprintf('c string template')
 * addpaht('path') to be able to execute the func in this path
 
 # Vectorization
+* h(x) = sum(theta j  * x j) = theta<sup>T</sup> * x   
+  prediction = theta' * x
+* using vector rather than loops as much as possible, it is:  1. more efficient. 2. more easy to understand.  
+3. less error-prone
