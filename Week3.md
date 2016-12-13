@@ -20,3 +20,5 @@
 ### Cost Function
 * Cost(h(x),y) = 1/2 * (h(x)-y)^2 for linear regression, become non-convex for logistic regression
 * Cost(h(x),y) = -log(hx) if y=1, -log(1-hx) if y=0
+
+* Cost = -ylog(hx) - (1-y)log(1-hx) --> more compact and easier to implement
