@@ -17,3 +17,6 @@
    -3+x1+x2>=0 --> y=1  
    -3+x1+x2 < 0 --> y=0  
    line: x1+x2=3 is a decision boundary
+### Cost Function
+* Cost(h(x),y) = 1/2 * (h(x)-y)^2 for linear regression, become non-convex for logistic regression
+* Cost(h(x),y) = -log(hx) if y=1, -log(1-hx) if y=0
