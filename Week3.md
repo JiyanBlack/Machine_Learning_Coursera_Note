@@ -17,6 +17,7 @@
    -3+x1+x2>=0 --> y=1  
    -3+x1+x2 < 0 --> y=0  
    line: x1+x2=3 is a decision boundary
+   
 ### Cost Function 
 * Cost(h(x),y) = 1/2 * (h(x)-y)^2 for linear regression, become non-convex for logistic regression
 * Cost(h(x),y) = -log(hx) if y=1, -log(1-hx) if y=0
@@ -64,10 +65,14 @@
   * Simpler Hypothesis
   * Less prone to overfitting
 * J(0) = J(0) + λ * sum(0j ^ 2)
+
 ## Regularized Linear Regression
 * 0j = 0j(1- a * λ / m ) - ....same term
+
 ## Normal Equation
 * 0 = (XT * X + λ[matrix]) <sup>-1</sup> XT * Y
 * Add the new regularization matrix also make the former part always invertible.
+
 ## Logistic Regression
 * Basically Same as linear regression
+
