@@ -21,6 +21,18 @@ save A.txt A -ascii
 Matrix(3,2)  
 Matrix(3,:)  
 Matrix(:,2)  
+Matrix([1 3],:)  
+B=[A , [11; 12; 13]]  
+C=[A B], C=[A;B]  
+log(A), exp(A), abs(A)  
+[val, index] = max(A)  
+A < 3, find(A < 3)
+[r,c] = find(A > 5)  
+sum(A,1 or 2) , prod(A,1 or 2) sum/prod the dimension element  
+max(A,[],1 or 2), get the max value of each dimension 1/2  
+
+
+
 
 # Basic Operation
 * bool value return 0/1; e.g: 1 && 0  >> ans = 0
