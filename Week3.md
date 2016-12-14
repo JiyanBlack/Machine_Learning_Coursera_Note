@@ -57,5 +57,15 @@
     * Model selection algorithm
   * Regularization
     * Keep all features, reduce the values of theatas
-    
-
+# Regularization
+* small values for thetas can can lead to:
+  * Simpler Hypothesis
+  * Less prone to overfitting
+* J(0) = J(0) + λ * sum(0j ^ 2)
+## Regularized Linear Regression
+* 0j = 0j(1- a * λ / m ) - ....same term
+## Normal Equation
+* 0 = (XT * X + λ[matrix]) <sup>-1</sup> XT * Y
+* Add the new regularization matrix also make the former part always invertible.
+## Logistic Regression
+* Basically Same as linear regression
