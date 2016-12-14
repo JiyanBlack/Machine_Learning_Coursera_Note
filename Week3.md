@@ -57,6 +57,8 @@
     * Model selection algorithm
   * Regularization
     * Keep all features, reduce the values of theatas
+    
+
 # Regularization
 * small values for thetas can can lead to:
   * Simpler Hypothesis
