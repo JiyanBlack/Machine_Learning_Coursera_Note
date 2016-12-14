@@ -57,3 +57,5 @@
     * Model selection algorithm
   * Regularization
     * Keep all features, reduce the values of theatas
+    
+
