@@ -46,3 +46,14 @@
 * Generate new binary trainning sets from the current multiclass sets.
 * If there are 3 classes, three h(x) is generated, each of them is trained to learning a single data class.
 * Finish training, on a new input x, pick a h(x) that maximize h(x)
+
+# The Problem of Overfitting
+* Underfitting or High bias --> not fitting enoughm, very strong bias that the data is some shape...
+* Overfitting or High variance --> if we have too many features, the training set may be fitted very well, but fails to generalize the new examples.
+* Overfitting can both damage logistic regression and linear regression
+* To address overfitting:
+  * Reduce number of features
+    * Manually delete features
+    * Model selection algorithm
+  * Regularization
+    * Keep all features, reduce the values of theatas
