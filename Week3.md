@@ -38,3 +38,11 @@
  * set a function return [J,gradient], J calculates the cost value, gradient calcultes the partial derivitives
  * Set initial thetas 
  [optTheta, functionVal, exitFlag] = fminunc(@costFunction,initialTheta,options)
+
+# Multiclass classification
+* Email foldering: work, friends, family, hobby...
+* Weather: sunny, cloudy, rain, snow
+* Y can be a small number of descret values
+* Generate new binary trainning sets from the current multiclass sets.
+* If there are 3 classes, three h(x) is generated, each of them is trained to learning a single data class.
+* Finish training, on a new input x, pick a h(x) that maximize h(x)
