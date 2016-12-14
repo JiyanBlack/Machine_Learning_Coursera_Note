@@ -33,3 +33,7 @@
   * Often faster than gradient descent  
   Disadvantages:  
   * More complex
+* How to use these functions in Matlab:
+ * set a function return [J,gradient], J calculates the cost value, gradient calcultes the partial derivitives
+ * Set initial thetas 
+ [optTheta, functionVal, exitFlag] = fminunc(@costFunction,initialTheta,options)
