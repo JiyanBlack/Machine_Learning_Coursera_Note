@@ -9,3 +9,7 @@
 * intermediate layers are called "hidden layers"
 * the last layer must output something, so it's called "output layer"
 * theta<sup>j</sup> is the matrix of weights that mapping from layer i to i+1
+* If network has sj units in layer j and sj+1 units in layer j+1, then Θ(j) will be of dimension sj+1×(sj+1).
+
+* We are actually doing the same thing as logistic regression at the output layer.
+* bias unit (a0 = [1..1]) is added every layer to add constant bias.
