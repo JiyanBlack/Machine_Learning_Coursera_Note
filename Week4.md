@@ -13,3 +13,6 @@
 
 * We are actually doing the same thing as logistic regression at the output layer.
 * bias unit (a0 = [1..1]) is added every layer to add constant bias.
+
+# Multiclass Classification
+The output layer will have several activations, each of then produce a vector that indicates the type of the output.
