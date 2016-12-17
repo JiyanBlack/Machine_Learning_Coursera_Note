@@ -88,3 +88,12 @@ Theta2 = ...
   * Number of hidden layers: 
     * default is 1 hidden layer(most common)
     * for multiple hidden layers, have same number of hidden units in every layer. The more hidden units, usually the better.
+2. Training a neural network
+	1. Randomly initialize weights
+	2. Implement forward propagation to get  h(x) for any x(i)
+	3. Implement code to compute cost function J(theta)
+	4. Implement back propagation to compute partial derivatives
+	5. Use gradient checking to check for once
+	6. Disable the gradient checking code.
+	7. Use gradient decent or advanced optimization method with backpropagation to compute partial derivatives to  get parameters -- theta.
+	8. J(theta) or neural networks is not convex, it can be contract to the local minimum. But usually get a very good optimization for theta.
