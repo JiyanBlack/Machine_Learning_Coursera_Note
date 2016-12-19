@@ -16,3 +16,9 @@ A test that you can run to gain insight what is/not working with the learning al
 * Usual steps:
     * Learn parameters from training data;
     * Compute the test set error J(test)
+    * For classification error, except J method, there is a misclassification error. Error(h,y) = 1 or 0 (binary value)
+
+# Model Selection Algorithm
+The trained parameters always have lower error on training example data. So the overfitting problem is that the difference between the trained and unknown data is too big.   
+Question is: d = degree of polynomial is the best.  
+We cannot use training set/test set model to get the best performance. Because we get the parameters from the test set and it is not fair to evaluate use the test set again.
