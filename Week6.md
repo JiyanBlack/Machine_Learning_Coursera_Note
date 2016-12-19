@@ -23,9 +23,7 @@ The trained parameters always have lower error on training example data. So the 
 Question is: d = degree of polynomial is the best. We can fit d, to make the trained theta with test sets better fitting.  
 We cannot use training set/test set model to get the best performance. Because we get the parameters from the test set and it is not fair to evaluate use the test set again.  
 Solution: Splitting into three pieces: Training set(60%), Cross Validation Set(CV,20%), Test set(20%).  
-* Training Error
-* Cross Validation Error
-* Test Error  
+
 Steps:
 1. Train the model using training set with different polynomials.
 2. Test the models on the cross validation sets, get a best parameters that has the lowest cross-validation error.
@@ -33,3 +31,6 @@ Steps:
 
 # Diagnosing bias vs variance
 Bias --> underfitting, Variance --> overfitting.  
+* Plot degree of polynomial to the training and cross-validation error graph.
+* Overfitting(variance): J(training) low and Jcv hight. Jtraining - Jcv is high.
+* Underfitting(bias): Jtrain is high and Jcv is high, Jtrain ~= Jcv.
