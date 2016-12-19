@@ -34,3 +34,4 @@ Bias --> underfitting, Variance --> overfitting.
 * Plot degree of polynomial to the training and cross-validation error graph.
 * Overfitting(variance): J(training) low and Jcv hight. Jtraining - Jcv is high.
 * Underfitting(bias): Jtrain is high and Jcv is high, Jtrain ~= Jcv.
+
