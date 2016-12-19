@@ -35,3 +35,20 @@ Bias --> underfitting, Variance --> overfitting.
 * Overfitting(variance): J(training) low and Jcv hight. Jtraining - Jcv is high.
 * Underfitting(bias): Jtrain is high and Jcv is high, Jtrain ~= Jcv.
 
+# Learning Curve
+Plot Jtrain or Jcv as a function of m(training set size). Reduce the training set size.  
+* High Bias: If Jcv reduces fast/ Jtrain increase fast, they both end up very high and flaten very quickly, means the model has high bias(underfitting), that is feeding more data can not really improve the performance.
+* High Variance: Jtrain is always low, but Jcv is relatively high and Jcv - Jtrain is high as well. Getting more data is likely to help.
+
+# Decisions to take
+1. Getting more training examples --> fix high variance.
+2. Trying a smaller sets of features --> fix high variance.
+3. Trying a biger data set --> fix high bias.
+4. Add polynomial features --> fix high bias.
+5. Increase lambda --> fix high variance.
+6. Decrease lambda --> fix high bias.
+7. Small/Simple neural network --> underfitting --> cheap computation, less effective
+8. Large neural network --> prone to overfitting --> expansive computation, more effective. 
+
+Usually we use large neural network with regularization to fix overfitting. Using training/cross-validation dataset to evaluate 
+degree(polynomial), neural network layers, regularization parameter(lambda). Use the test dataset to evaluate the trained parameters.
