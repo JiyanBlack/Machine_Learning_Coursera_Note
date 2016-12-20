@@ -65,6 +65,9 @@ degree(polynomial), neural network layers, regularization parameter(lambda). Use
    5. ......
 
 # Error Analysis
-Recommend Approach:
+Recommend Approach:  
+
 1. Start with a simple algorithm, implement and test it on the cross-validation data.
-2. Plot learning curve, decide the problem of 
+2. Plot learning curve, decide the problem is the underfitting(high bias) or overfitting(high variance) problem.
+3. Error Analysis: manually examine the wrong predictions that your algorithm made on. Spot systematic pattern of those errors. New features can come out from it.
+
