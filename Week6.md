@@ -52,3 +52,19 @@ Plot Jtrain or Jcv as a function of m(training set size). Reduce the training se
 
 Usually we use large neural network with regularization to fix overfitting. Using training/cross-validation dataset to evaluate 
 degree(polynomial), neural network layers, regularization parameter(lambda). Use the test dataset to evaluate the trained parameters.
+
+# Build a Spam Classifier
+* Choose n words to be features, indicate of spam/non-spam;
+* Xj = 0 if word j not in email else 1;
+* Pick most frequently appear words in email.
+* How to make the classifier accurate:
+   1. Collect lots of data
+   2. Develop sophisticated features on email routing information(from email hearder)
+   3. Collapse the similar features: "discount" and "discounts"
+   4. Develop algorithm to detect delibrate misspellings (m0rgage,med1cine)
+   5. ......
+
+# Error Analysis
+Recommend Approach:
+1. Start with a simple algorithm, implement and test it on the cross-validation data.
+2. Plot learning curve, decide the problem of 
