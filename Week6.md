@@ -81,3 +81,10 @@ Recommend Approach:
  * Recall: true postives / actual postives, is the effectiveness of our predictions 
 * Precision and recall are usually contradictory and a tradeoff needs to be made.
 * Reduct the two into one metric, F Score = 2* (PR)/(P + R) is better than mean value.
+
+# Design High Accuracy Learning System
+The more data the better ?    
+* Features has sufficient information to predict y accurately. Given the input x, can a human expert confidently predict y?
+* Use a learning alorithm with many parameters (features, hidden layers)
+* Use a very large training set to address overfitting problem
+* Combine the large dataset and complex learning algorithm can lead to both low bias and low variance
