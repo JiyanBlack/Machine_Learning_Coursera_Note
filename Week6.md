@@ -71,3 +71,13 @@ Recommend Approach:
 2. Plot learning curve, decide the problem is the underfitting(high bias) or overfitting(high variance) problem.
 3. Error Analysis: manually examine the wrong predictions that your algorithm made on. Spot systematic pattern of those errors. New features can come out from it.
 
+# Skewed Class and Error Metric
+* Example: 1% error on test sets. But only 0.5% people actually got cancer....
+* Data is skewed, the negative/postive is way more than the other.
+* Precision/Recall method
+   1. precision: Of all predictions that y=1, what fraction that y is acutally 1;
+   2. Recall: of all y is actually 1, what proportion that we predict y=1;
+ * Precision: true postives/(true positives + false postives), is the precision of our predictions
+ * Recall: true postives / actual postives, is the effectiveness of our predictions 
+* Precision and recall are usually contradictory and a tradeoff needs to be made.
+* Reduct the two into one metric, F Score = 2* (PR)/(P + R) is better than mean value.
