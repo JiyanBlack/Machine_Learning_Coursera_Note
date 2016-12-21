@@ -4,3 +4,5 @@ Cost function is c * Cost + regularization_term , not Cost + lambda * regulariza
 * if y=1, we want hx >=1(not just >=0), and cost =0;
 * if y=0, we want hx <= -1(not just < 0), and then cost = 0;
 * If C is large, the Cost term should be extremely small in order to make the total cost small. 
+* Benefits: produce larger margin classifier, thus more reasonable when boundary is clear.
+* Disadvantage: more sensitive to outlier, can be fixed by reduce the c value.
