@@ -13,3 +13,8 @@ Cost function is c * Cost + regularization_term , not Cost + lambda * regulariza
 * f is the similarity between training examples and selected landmarks
 * if xi is close to fi, then fi = 1; else 0;
 * So thetai decide that, if one sample is close to xi, whether it is more likely to be negative or postive.
+* Choosing the Landmarks:
+  1. Given X, n training examples
+  2. Choose the training examples as landmarks dataset.
+  3. f1 = similarity(xi,x1), f2 = similarity(xi,x2) ... f(i) = [f0=1, f1, f2, f3...]
+  
