@@ -42,4 +42,5 @@ Cost function is c * Cost + regularization_term , not Cost + lambda * regulariza
   * If n is large relatively to m, use logistic regression or SVM without kernels.
   * If n is small and m is intermediate: use SVM with Gaussian kernel
   * If n is small, m is very large: create/add more features, use logistic regression or SVM without a kernel, because 
-  the Gaussian kernel is relatively slow.
+  the Gaussian kernel is relatively slow..
+4. Algorithm is important, but often the features selecting/data amount/parameter setting..
