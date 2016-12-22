@@ -21,3 +21,25 @@ Cost function is c * Cost + regularization_term , not Cost + lambda * regulariza
 * C is small: higher bias, lower variance
 * sigma: exp(-(||length||/bias)^2) is large: higer bias, because the similarity function become smooth
 * simga is small: very abrupt curve, lower bias, higher variance
+
+# Practical SVM
+1. Use SVM package (e.g. liblinear, libsvm,...) to solve for parameters theta. 
+  * Need to specify parameter C
+  * Choice of kernel(similarity function)
+    1. no kernel(linear kernel), large features, m small
+    2. Gaussian kernel, small features, m large
+    3. Perform feature scaling before using Gaussian kernel
+  * All kernels must statisfy the "Mercer's Theorem", which enable the SVM to optimize, run efficiently and do not 
+  diverge.
+  * Polynomial Kernel: k(x,l) = (Xt * l + constant)^degree, usually performe worse than Gaussian kernel
+  * String kernel, chi-square kernel, histogram intersection kernel... all used to produce the difference between
+  landmarks and data...
+2. Multi-class classification
+  * Many SVM packages already have built-in multi-class classification functionality.
+  * Otherwise, use one-vs-all method. (e.g. for hand writing recoginition, if y=5, set a vector that 5th is 1 and others 
+  are zeor : [0,0,0,0,1,0,0...])
+3. Logistic regression vs SVM
+  * If n is large relatively to m, use logistic regression or SVM without kernels.
+  * If n is small and m is intermediate: use SVM with Gaussian kernel
+  * If n is small, m is very large: create/add more features, use logistic regression or SVM without a kernel, because 
+  the Gaussian kernel is relatively slow.
