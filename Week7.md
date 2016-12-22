@@ -17,4 +17,7 @@ Cost function is c * Cost + regularization_term , not Cost + lambda * regulariza
   1. Given X, n training examples
   2. Choose the training examples as landmarks dataset.
   3. f1 = similarity(xi,x1), f2 = similarity(xi,x2) ... f(i) = [f0=1, f1, f2, f3...]
-  
+* C(1/lambda) is large: lower bias, higher variance
+* C is small: higher bias, lower variance
+* sigma: exp(-(||length||/bias)^2) is large: higer bias, because the similarity function become smooth
+* simga is small: very abrupt curve, lower bias, higher variance
