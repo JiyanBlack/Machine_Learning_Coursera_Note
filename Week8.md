@@ -26,3 +26,8 @@ Application:
 * J= 1/m * sum(||xi-mu(ci)||^2), minimize J
 * Tring to find parameter C and mu, to minize the cost function
 * Cost function is also called the distortion of k-means algorithm
+* Explanation:
+  1. Assign points to the closest cluster centroid, which is minimizing J according to the centroids
+  2. Reassign points to the centroids, which is minimizing J according to the points
+  3. 
+* 
