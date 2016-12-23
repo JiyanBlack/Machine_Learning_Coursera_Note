@@ -14,4 +14,15 @@ Application:
   3. Move the cluster centroids according the grouped points
   4. repeat 2-3 until the cluster centroids stop moving
   5. get different k groups.
-  
+* Input: k(number of clusters), training set X(drop x0=1 addition)
+* If no points assigned to one centroid, just eliminate it.
+#### K-means for non-clear-separated clusters
+ Some time you can get the separation well, sometimes not.
+
+## Optimization Objective
+* Ci: which cluster the ith X is assigned to
+* mu(k): cluster centroid k
+* mu(ci): cluster centroid of ci
+* J= 1/m * sum(||xi-mu(ci)||^2), minimize J
+* Tring to find parameter C and mu, to minize the cost function
+* Cost function is also called the distortion of k-means algorithm
