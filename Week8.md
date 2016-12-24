@@ -45,7 +45,7 @@ Application:
 ### Elbow Method
 Draw the K - J graph, get a curve that decrease with the increase of K, select the elbow point(the point 
 that curve stops decrease rapidly).  
-But elbow method is not that clear in many situations
+But elbow method is not that clear in many situations, there is not a clear elbow in the graph.
 ### Make the cluster number serve the down-stream purpose
-example: want to make five different size t-shirts, so cluster the data into five different clusters, k = 5  
+example: want to make five different size t-shirts, so cluster the data into five different clusters, k = 5.  
 
