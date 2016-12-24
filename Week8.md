@@ -32,4 +32,12 @@ Application:
   3. The J is always reducing.
 
 ## Random Initialization
-* 
+* Initialize cluster centroids: 
+ 1. K < m
+ 2. Randomly pick K training examples
+ 3. Set K equal to these K examples
+* Ramdon initialization will lead to different undesired local optima
+* To address the local optima, run k-means many times and get the minimal J, which will lead to the global optima.
+* If k=2 to 10, doing multiple times can find a good centroids.
+* If k > 100, no much difference between the different trials.
+
