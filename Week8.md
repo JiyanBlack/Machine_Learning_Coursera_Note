@@ -79,4 +79,10 @@ Procedure:
 * Ureduce = U(:,1:k) --> nxk matrix
 * z = Ureduce' * xi;
 
+## Reconstruct from Compressed Matrix
+ * z = U' * x, xapprox = U * z, xapprox is very close to the original graph.
+ * Reconstruct graph looks like that points are moved to the same projected surface.
+ 
+## Choosing the number of pricipal components - k
+
  
