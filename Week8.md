@@ -57,4 +57,4 @@ example: want to make five different size t-shirts, so cluster the data into fiv
 This algorithm is trying to minimize the projection error(the distance between the projecting surface and the acutal points).  
 It is the same as finding a vector which makes the projecting distance the smallest.  
 For 3d, find a pair of vectors.  
-For k vectors, if you want to reduce the dimensionality to k.
+Reduce from nd to kd, find k vectos , if you want to reduce the dimensionality to k.
