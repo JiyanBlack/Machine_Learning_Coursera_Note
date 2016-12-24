@@ -41,3 +41,8 @@ Application:
 * If k=2 to 10, doing multiple times can find a good centroids.
 * If k > 100, no much difference between the different trials.
 
+## Choose the number of Clusters K
+### Elbow Method
+Draw the K - J graph, get a curve that decrease with the increase of K, select the elbow point(the point 
+that curve stops decrease rapidly).  
+But elbow method is not that clear in many situations
