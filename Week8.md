@@ -105,8 +105,7 @@ Procedure:
 * The reduce matrix U should only be obtained by running training dataset, not cv or test data.
 * To get the predictions, cv and test data will also be converted by the same U produced by training dataset.
 * Reduce matrix is just like feature scaling.
-
-## Application:
+### Application of PAC:
 * Compression --> save space , increase speed
 * Visualization
 * Bad use of PCA: 
