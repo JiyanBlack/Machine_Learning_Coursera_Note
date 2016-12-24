@@ -84,5 +84,31 @@ Procedure:
  * Reconstruct graph looks like that points are moved to the same projected surface.
  
 ## Choosing the number of pricipal components - k
+* Average squared projection error: 1/m * sum(||xi-xapprox||^2)
+* Total variation in the data: 1/m * sum(||xi||^2)
+* Choose k to be the smallest value that : aspe/tv <= 0.01, make 99% of variance is retained
+* Goal is to reduce as much dimensions as possible but retain more information
+* Steps:
+ 1. Try PCA k=1;
+ 2. Compute Z and retain ratio
+ 3. Check if ratio < 0.01(or any other reasonable value)
+ 4. Increase the k value.
+* In [U S V], the S is a diagonal matrix, the same retain ratio can be computed using S more efficiently
 
- 
+## Supervised Learning Speedup with PCA
+* With very high dimensional features, the learning algorithm is normally slow.
+* Steps:
+ 1. Get unlabeled dataset: [x1,x2, ... xn]
+ 2. Generating reduced data set [z1,z2 ... zn]
+ 3. new training example [z1,y1] ... [zn,yn]
+ 4. learn hypothesis from the new training examples
+* The reduce matrix U should only be obtained by running training dataset, not cv or test data.
+* To get the predictions, cv and test data will also be converted by the same U produced by training dataset.
+* Reduce matrix is just like feature scaling.
+
+## Application:
+* Compression --> save space , increase speed
+* Visualization
+* Bad use of PCA: 
+  1. prevent overfitting, it works, but by throwing away information.
+  2. When design ML system, do it without implement PCA, run once, if that is not your want(too slow, memory usage large), try PCA then.
