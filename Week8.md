@@ -53,7 +53,7 @@ example: want to make five different size t-shirts, so cluster the data into fiv
 * Data compression: Reduce the redundent features into the same one, run faster, reduce space usage.
 * Data Visualization: If we can understand the data better, we can design algorithms more effective.
 
-## Princal Component Analysis
+## Principal Component Analysis
 This algorithm is trying to minimize the projection error(the distance between the projecting surface and the acutal points).  
 It is the same as finding a vector which makes the projecting distance the smallest.  
 For 3d, find a pair of vectors.  
