@@ -72,3 +72,11 @@ Data preprocessing for PCA:
 Procedure:
  1. Covariance matrix sigma
  2. Compute eigenvectors, sigular value decomposition(奇异值分解), [U,S,V]=svd(Sigma)
+ 3. U is a nxn metrix, ui will be the exact vectors we want.
+ 4. [u1 u2 u3 ... uk] is nxk matrix, is the reduce matrix we want, zi = U' * Xi will produce k dimensional zi
+ 5. For all xi, compute U' * xi.
+* Sigma = 1/m * (X' * X); X=[x1' x2' x3'...]
+* Ureduce = U(:,1:k) --> nxk matrix
+* z = Ureduce' * xi;
+
+ 
