@@ -57,4 +57,18 @@ example: want to make five different size t-shirts, so cluster the data into fiv
 This algorithm is trying to minimize the projection error(the distance between the projecting surface and the acutal points).  
 It is the same as finding a vector which makes the projecting distance the smallest.  
 For 3d, find a pair of vectors.  
-Reduce from nd to kd, find k vectos , if you want to reduce the dimensionality to k.
+Reduce from nd to kd, find k vectos , if you want to reduce the dimensionality to k.  
+
+
+PCA and Linear Regression are different:
+ * they try to minimize different distance.  
+ * There is no y in linear regression, no y trying to predict in PCA.
+
+
+Data preprocessing for PCA:
+ * replace xj with xj-mu
+ * rescale the range of x, have xj / reasonable_value
+
+Procedure:
+ 1. Covariance matrix sigma
+ 2. Compute eigenvectors, sigular value decomposition(奇异值分解), [U,S,V]=svd(Sigma)
