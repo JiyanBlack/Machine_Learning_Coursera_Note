@@ -49,3 +49,12 @@ But elbow method is not that clear in many situations, there is not a clear elbo
 ### Make the cluster number serve the down-stream purpose
 example: want to make five different size t-shirts, so cluster the data into five different clusters, k = 5.  
 
+# Dimensionality Reduction
+* Data compression: Reduce the redundent features into the same one, run faster, reduce space usage.
+* Data Visualization: If we can understand the data better, we can design algorithms more effective.
+
+## Princal Component Analysis
+This algorithm is trying to minimize the projection error(the distance between the projecting surface and the acutal points).  
+It is the same as finding a vector which makes the projecting distance the smallest.  
+For 3d, find a pair of vectors.  
+For k vectors, if you want to reduce the dimensionality to k.
