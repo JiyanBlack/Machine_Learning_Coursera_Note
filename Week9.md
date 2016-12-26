@@ -7,4 +7,6 @@
     1. Fraud detection --> detect whether a user is unusual or not.
     2. Manuafacturing
     3. Monitoring computers in a data center, to watch out the performance of a machine
+
 ## Normal Distribution(Gaussian Distribution)
+X ~ N(mu,sigma^2)
