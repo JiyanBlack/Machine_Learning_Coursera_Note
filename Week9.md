@@ -45,3 +45,7 @@ p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.
 3. Experience:
     * Choose the feature that is very large or small when it's in anomalous status.
     
+# Multivariate Gaussian Distribution
+* Problem is that the probability graph is a circle, so cannot fit in many other shapes normal/anomalous model
+* Multivariate Gaussian Model:
+    1. Parameters: mu --> n vector, sigma --> nxn matrix
