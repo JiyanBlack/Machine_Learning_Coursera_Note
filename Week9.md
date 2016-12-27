@@ -10,3 +10,21 @@
 
 ## Normal Distribution(Gaussian Distribution)
 X ~ N(mu,sigma^2)
+
+## Density Estimation
+p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.  
+
+## Evaluate the Estimation System
+* We have some labeled data that are known normal or anomalous
+* We have the training set are unlabeled and normal examples.
+* Cross-validation set, are known to be normal and anomalous. 
+* Test set, are known examples.
+* Example: 10000 good engines, 20 flawed ones.
+    1. Training set: 6000 good ones as training set.
+    2. Cross-validation set: 2000 good ones, 10 anomalous.
+    3. Test: 2000 good, 10 anomalous.
+* Steps:
+    1. Fit model using normal distribution to the training set.
+    2. On a cross-validation/test example x, predict y =1(anomalous) or 0(normal)
+    3. Estimate the model on true/false positive/negative, recall/precision and F1 score
+    
