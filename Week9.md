@@ -29,8 +29,19 @@ p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.
     3. On a cross-validation/test example x, predict y =1(anomalous) or 0(normal)
     4. Estimate the model on true/false positive/negative, recall/precision and F1 score
     
-# Supervised Learning Algorithm and Anomaly Detection Algorithm
+## Supervised Learning Algorithm and Anomaly Detection Algorithm
 * Why we do not just use supervised learning instead of nomaly detection:
     1. Anomaly detection: a very small number of postive examples and large number of negative examples.
     2. Many different "types" of anomalies, hard for any algorithm to learn from postive examples the features of normal
      examples.
+
+## Choose what features you use
+1. Non-Gaussian Model(Asymetric)
+    * Take a log transformation(X becomes log(X), or X^0.5) to the data, the whole graph will look like Gaussian distribution
+2. Error analysis for anomaly detection
+    * P(x) is similar for normal and anomalous examples.
+    * Solution: look at the false error, find a new feature to detect this anomaly.
+    * With this new feature, it would be easier to detect the features.
+3. Experience:
+    * Choose the feature that is very large or small when it's in anomalous status.
+    
