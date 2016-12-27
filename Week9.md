@@ -49,3 +49,6 @@ p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.
 * Problem is that the probability graph is a circle, so cannot fit in many other shapes normal/anomalous model
 * Multivariate Gaussian Model:
     1. Parameters: mu --> n vector, sigma --> nxn matrix
+    2. mu determine the center of the model
+    3. sigma determine the shape and correlation of Xn
+* 
