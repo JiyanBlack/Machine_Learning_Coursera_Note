@@ -25,6 +25,12 @@ p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.
     3. Test: 2000 good, 10 anomalous.
 * Steps:
     1. Fit model using normal distribution to the training set.
-    2. On a cross-validation/test example x, predict y =1(anomalous) or 0(normal)
-    3. Estimate the model on true/false positive/negative, recall/precision and F1 score
+    2. Select features and threshold value on the cv sets.
+    3. On a cross-validation/test example x, predict y =1(anomalous) or 0(normal)
+    4. Estimate the model on true/false positive/negative, recall/precision and F1 score
     
+# Supervised Learning Algorithm and Anomaly Detection Algorithm
+* Why we do not just use supervised learning instead of nomaly detection:
+    1. Anomaly detection: a very small number of postive examples and large number of negative examples.
+    2. Many different "types" of anomalies, hard for any algorithm to learn from postive examples the features of normal
+     examples.
