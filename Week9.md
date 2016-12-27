@@ -51,4 +51,8 @@ p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.
     1. Parameters: mu --> n vector, sigma --> nxn matrix
     2. mu determine the center of the model
     3. sigma determine the shape and correlation of Xn
-* 
+* Steps:
+    1. Fitting model: mu = mean(sum(X)), sigma = 1/m * (X * X');
+    2. Given a new example, compute: p(x)
+    3. compare p(x) to threshold
+    
