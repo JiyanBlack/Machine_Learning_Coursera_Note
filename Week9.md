@@ -64,5 +64,5 @@ p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.
 * Multivariate Gaussian: 
     * Automatically captures the correlations.
     * Computaionally expensive for invert matrix
-    * must have m>n, otherwise sigma is non-invertible
+    * must have m>n and no redundant feature, otherwise sigma is non-invertible
     
