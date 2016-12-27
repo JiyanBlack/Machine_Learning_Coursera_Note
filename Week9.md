@@ -55,4 +55,5 @@ p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.
     1. Fitting model: mu = mean(sum(X)), sigma = 1/m * (X * X');
     2. Given a new example, compute: p(x)
     3. compare p(x) to threshold
-    
+* Normal Gaussian model is a special case of multivariate Gaussian model.
+
