@@ -1,5 +1,5 @@
-# Density Estimation
-## Anomaly Detection
+# Anomaly Detection
+## Introduction
 * We have a set of data that is all normal examples.
 * So we would like to know whether a new datum is normal or not.
 * To achieve this, we need to build a model, P(xtest) < threshold --> anomaly
