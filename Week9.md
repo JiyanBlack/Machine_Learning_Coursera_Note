@@ -56,4 +56,13 @@ p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.
     2. Given a new example, compute: p(x)
     3. compare p(x) to threshold
 * Normal Gaussian model is a special case of multivariate Gaussian model.
-
+## When to use which model?
+* Original model: 
+    * If x1 and x2 have some kind of relationship, create a new feature x1/x2.
+    * Computationally cheaper, so scales better to large n
+    * Works fine even training set is small
+* Multivariate Gaussian: 
+    * Automatically captures the correlations.
+    * Computaionally expensive for invert matrix
+    * must have m>n, otherwise sigma is non-invertible
+    
