@@ -66,3 +66,9 @@ p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.
     * Computaionally expensive for invert matrix
     * must have m>n and no redundant feature, otherwise sigma is non-invertible
     
+# Recommender System
+## Content-based Recommender Systems
+* Each user has a theta vector that defines the liking and dislikings of this user. 
+* Predictions are produced by theta' * x (the content attribute vector)
+* Essentially like linear regression, learn theta from the movies that the user has rated.
+* Minimize J(theta1,2,3...n)
