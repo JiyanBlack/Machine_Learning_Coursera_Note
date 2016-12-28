@@ -72,3 +72,8 @@ p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.
 * Predictions are produced by theta' * x (the content attribute vector)
 * Essentially like linear regression, learn theta from the movies that the user has rated.
 * Minimize J(theta1,2,3...n)
+
+## Collaborative Filtering
+* Learn features from theta and current data, then learn theta from features, back and forth, improve the performance
+ of this algorithm.
+* Every user behaviour will help to improve the algorithm and user's own recommendations, so it is called collaborative
