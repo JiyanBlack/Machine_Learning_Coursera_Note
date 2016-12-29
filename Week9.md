@@ -77,3 +77,26 @@ p(x) = prod(p(normal xj)), if p(x) < threshold, then it's anomaly.
 * Learn features from theta and current data, then learn theta from features, back and forth, improve the performance
  of this algorithm.
 * Every user behaviour will help to improve the algorithm and user's own recommendations, so it is called collaborative
+## Collaborative Filtering Algorithm
+* The intuitive way to improve
+    1. Given x1, x2, x3 .... estimate theta1, theta2, theta3...(known movie type, predict user mark)
+    2. Given theta1, theta2, theta3 ... estimate x1, x2, x3 .... (known user preference, predict movie type)
+* The combined way: add the two cost function together to minimize both at one time.
+* No need to set x0=1 or theta0 = 1. Because we are learn theta and x simutaneously, no need to hard code some 
+features equal to one, if the algorithm needs 1, it can learn by itself.
+* Steps:
+    1. Initialize x1....xn, theta1,... thetan to small random values
+    2. Minimize J(xs,thetas) using gradient descent.
+    3. For a user with learned parameters theta,a movie with learned features x, predict a rating as theta' * x.
+
+## Low Rank Matrix Factorization(another name) to find related entities
+* It is hard to know what are the learned features.
+* But movies with similar features will be liked.
+* How to find movie j related to movie i?
+    * || xi - xj || is small --> similar
+ 
+## Recommender Systems Mean Normalization
+* calculate mean of Y
+* have Y - mean, get the sum = 0 for each row in Y
+* For user j, on movie i, predict thetaj' * xi + meani
+* It's the same as predict the new user the average rating.
