@@ -41,4 +41,4 @@ Learn from continuous stream of data.
 
 * If the learning algorithm can be expressed as computing sums of functions over the training set, map-reduce can be 
 useful.
-
+* It may also be useful for the multiple-core cpu.
