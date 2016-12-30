@@ -39,3 +39,6 @@ Learn from continuous stream of data.
 * take the temp parts and put them together
 * update theta according to combined J
 
+* If the learning algorithm can be expressed as computing sums of functions over the training set, map-reduce can be 
+useful.
+
