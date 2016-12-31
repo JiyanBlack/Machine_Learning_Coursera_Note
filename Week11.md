@@ -23,3 +23,19 @@
   * Train the classifier to get dividers between characters. (the seperation is postive example)
 
 * Character Classification --> supervised learning
+
+# Artificial Data Synthesis
+* Create large data set/ increase the size of dataset
+* For photo orc, create artificial data from computer fonts with image postprocess to make them look similar to the real data.
+* Another way, it take the real character pictures and apply distortions/filters on those pics to get new dataset.
+* Synthetic data can provide you unlimited database.
+* Conclusion:
+  1. Create new data from scratch (fonts).
+  2. Create data by introducing distortions.
+  3. Introducing noise should be meaningful and may appear in real examples.
+  4. Before you get more data, make sure you have a low bias classifier(no underfitting).
+  5. Other ways to generate data:collect data yourself; Crow source(Amazon Mechanical Turk)
+  
+ # Ceiling Analysis
+* For each phase, manually provide correct input instead of learned input, measure the system accuracy.
+* This helps you figure out the upside potential if you perfectly accomplish each phase.
