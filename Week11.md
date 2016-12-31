@@ -39,3 +39,4 @@
 # Ceiling Analysis
 * For each phase, manually provide correct input instead of learned input, measure the system accuracy.
 * This helps you figure out the upside potential if you perfectly accomplish each phase.
+* DO NOT use your gut feeling!
