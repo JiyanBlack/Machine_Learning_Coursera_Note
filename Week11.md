@@ -40,3 +40,10 @@
 * For each phase, manually provide correct input instead of learned input, measure the system accuracy.
 * This helps you figure out the upside potential if you perfectly accomplish each phase.
 * DO NOT use your gut feeling!
+
+# Final Summary
+* Supervised Learning: Linear regression, logistic regression, neural network, SVMs
+* Unsupervised Learning: k-means, PCA, Anamaly detection
+* Special applications: Recommender systems, large scale machine learning
+* advice on building a machine learning system: bias/variance, regularization, performance ceiling, evaluation algorithms, leanring
+ curve, error analysis...
