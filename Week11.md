@@ -36,6 +36,6 @@
   4. Before you get more data, make sure you have a low bias classifier(no underfitting).
   5. Other ways to generate data:collect data yourself; Crow source(Amazon Mechanical Turk)
   
- # Ceiling Analysis
+# Ceiling Analysis
 * For each phase, manually provide correct input instead of learned input, measure the system accuracy.
 * This helps you figure out the upside potential if you perfectly accomplish each phase.
